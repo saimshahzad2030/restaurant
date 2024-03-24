@@ -1,0 +1,75 @@
+.container {
+    position: relative;
+  }
+  
+  .textContainer {
+    position: absolute;
+    top: 30%; 
+    right: 10%;
+    color: white;
+    font-family:"Madimi One", sans-serif;
+    font-size: 60px;
+    text-align: right;
+    width: 35%;
+  }
+  .image{
+    opacity: 0.4;
+  }
+  .textItem {
+    display: none;
+  }
+  
+  .textItem.active {
+    display: block;
+    animation: fadeIn 1s ease-in-out; /* Adjust animation duration and timing function as needed */
+  }
+
+ 
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateX(40px); 
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0); 
+    }
+  }
+
+
+  @media screen and (max-width:1024px) and (min-width:900px) {
+    .textContainer {
+        top: 20%; 
+        right: 5%;
+        font-size: 50px;
+        width: 35%;
+      }
+  }
+
+  @media screen and (max-width:900px) and (min-width:600px) {
+    .textContainer {
+        top: 15%; 
+        right: 5%;
+        font-size: 40px;
+        width: 40%;
+      }
+  }
+
+  @media screen and (max-width:600px) and (min-width:300px) {
+    .textContainer {
+        top: 12%; 
+        right: 5%;
+        font-size: 25px;
+        width: 45%;
+      }
+  }
+
+  @media screen and (max-width:300px) {
+    .textContainer {
+        top: 10%; 
+        right: 5%;
+        font-size: 20px;
+        width: 50%;
+      }
+  }

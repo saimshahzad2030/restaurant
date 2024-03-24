@@ -1,0 +1,44 @@
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+}
+.innerDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    justify-content: space-evenly;
+}
+.img{
+    width: 70px;
+}
+.innerDiv > h5{
+    margin-top: 20px;
+    text-align: center;
+}
+.itemHeading{
+    text-align:center;
+    color:rgb(255, 255, 255);
+    font-size: 25px;
+   font-family:"Madimi One", sans-serif;
+}
+@media only screen  and (max-width: 500px){
+
+   
+.row{
+    flex-direction: column;
+}
+.img{
+    width:80px;
+}
+.innerDiv{
+    margin-top: 40px;
+}
+}

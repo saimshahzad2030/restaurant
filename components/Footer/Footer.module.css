@@ -1,0 +1,40 @@
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    font-family:"Madimi One", sans-serif;
+
+}
+.footer > *{
+    color: white;
+    font-family:"Madimi One", sans-serif;
+    text-align: center;
+}
+.footerText{
+    
+    font-family:"Madimi One", sans-serif;
+    color: white;
+}
+
+.footerHead{
+    font-family:"Madimi One", sans-serif;
+    color: white;
+}
+@media screen  and (max-width:550px) {
+    .footerText{
+        font-size: 30px;
+        margin-top: 10px;
+    }
+    
+    .footerHead{
+        margin-top: 20px;
+
+        font-size: 40px;
+    }
+    .input{
+        margin-top: 20px;
+    }
+}

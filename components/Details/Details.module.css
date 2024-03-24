@@ -1,0 +1,18 @@
+.cardHeading{
+    font-family:"Madimi One", sans-serif;
+
+}
+.mainHeading{
+    font-family:"Madimi One", sans-serif;
+
+}
+.cardDescription{
+    font-family:"Madimi One", sans-serif;
+
+}
+
+@media screen and (max-width:1100px) {
+    .cardDescription{
+        display: none;
+    }
+}
