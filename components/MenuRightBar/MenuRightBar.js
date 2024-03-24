@@ -10,6 +10,8 @@ const  MenuRightBar = ({content,menu})  => {
         );
     };
     const columns = chunkArray(content, parseInt(((content.length) / 3)) +1);
+    console.log(menu,'menu')
+    console.log(content,'content')
     return (
    
         <>
@@ -19,7 +21,9 @@ const  MenuRightBar = ({content,menu})  => {
                 <div className={style.row} key={col+index}>
                     {col.map((item,index)=>(
                     <div className={style.innerDiv} key={item+index}>
-                        <img className={style.img} src={'/Assets/menu/' + menu + '/' + item.img + '.png'} alt={item.img}/>
+                        <img className={style.img} src={'/Assets/menu/beef/Beef Kebab.png'} alt={item.img}/>
+                        
+                        {/* <img className={style.img} src={'/Assets/menu/' + menu + '/' + item.img + '.png'} alt={item.img}/> */}
                         <h5 className={style.itemHeading}>{item.img}</h5>
                     </div>
 ))}

@@ -30,23 +30,26 @@ const MenuList = ({setContent,setMenu}) => {
     
     }
     else if(itemName === 'breakfast'){
-      // const imageContext = require.context(`../../public/Assets/menu/breakfast`, false, /\.(png)$/);
-      // const imageNames = imageContext.keys().map((key) => key.replace('./', ''));
-      const imageNames = ['Chana Tarkari.png', 'Garlic Bread.png', 'Maska Bun.png', 'Rusk, Cake Rush.png', 'omelette.png', 'waffle.png']
+     const imageNames = ['Chana Tarkari.png', 'Garlic Bread.png', 'Maska Bun.png', 'Rusk, Cake Rush.png', 'omelette.png', 'waffle.png']
       console.log(imageNames)
       const arr = []
       imageNames.map((item,index)=>(
         arr.push({name:item.slice(0,item.length-4),img:item.slice(0,item.length-4)})
       )) 
+      console.log(arr)
       setContent(arr)
     }
     else if(itemName === 'wings'){
       const imageContext = require.context(`../../public/Assets/menu/wings`, false, /\.(png)$/);
       const imageNames = imageContext.keys().map((key) => key.replace('./', ''));
+      console.log(imageNames)
+
       const arr = []
       imageNames.map((item,index)=>(
         arr.push({name:item.slice(0,item.length-4),img:item.slice(0,item.length-4)})
       )) 
+      console.log(arr)
+
       setContent(arr)
     }
    
