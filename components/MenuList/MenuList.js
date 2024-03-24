@@ -2,7 +2,6 @@
 
 import React from 'react'
 import style from './MenuList.module.css'
-import  Link  from 'next/link';
 const MenuList = ({setContent,setMenu}) => {
   const clickHandler = (itemName)=>{
     const capitalizedString = itemName.charAt(0).toUpperCase() + itemName.slice(1);
@@ -31,8 +30,10 @@ const MenuList = ({setContent,setMenu}) => {
     
     }
     else if(itemName === 'breakfast'){
-      const imageContext = require.context(`../../public/Assets/menu/breakfast`, false, /\.(png)$/);
-      const imageNames = imageContext.keys().map((key) => key.replace('./', ''));
+      // const imageContext = require.context(`../../public/Assets/menu/breakfast`, false, /\.(png)$/);
+      // const imageNames = imageContext.keys().map((key) => key.replace('./', ''));
+      const imageNames = ['Chana Tarkari.png', 'Garlic Bread.png', 'Maska Bun.png', 'Rusk, Cake Rush.png', 'omelette.png', 'waffle.png']
+      console.log(imageNames)
       const arr = []
       imageNames.map((item,index)=>(
         arr.push({name:item.slice(0,item.length-4),img:item.slice(0,item.length-4)})

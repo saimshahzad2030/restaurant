@@ -3,8 +3,7 @@
 import React from 'react'
 import style from './MenuRightBar.module.css'
 const  MenuRightBar = ({content,menu})  => {
-    const imageContext = require.context(`../../public/Assets/menu/juice`, false, /\.(png)$/);
-    const imageNames = imageContext.keys().map((key) => key.replace('./', ''));
+    
     const chunkArray = (items, size) => {
         return Array.from({ length: Math.ceil(items.length / size) }, (_, index) =>
             items.slice(index * size, index * size + size)
