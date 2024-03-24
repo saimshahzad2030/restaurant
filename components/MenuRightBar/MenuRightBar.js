@@ -22,8 +22,8 @@ const  MenuRightBar = ({content,menu})  => {
                     <div className={style.innerDiv} key={item+index}>
                         
                      
-                       {menu && item &&  <img className={style.img} src={`/Assets/menu/${menu}/${item.img}.png`} alt={item.img}/>
-                        }
+                       <img className={style.img} src={`/Assets/menu/beef/${item.img}.png`} alt={item.img}/>
+                        
                        <h5 className={style.itemHeading}>{item.img}</h5>
                     </div>
 ))}
