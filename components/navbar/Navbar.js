@@ -60,11 +60,11 @@ const Navbar = ({selectedLink}) => {
         {/* Mobile Menu */}
         {isMenuOpen && (
           <div className={`sm:hidden mt-4 bg-yellow-50`}>
-          <div className={`flex flex-col space-y-4 items-center`}>
+          <div className={`flex flex-col items-center`}>
             <Link href="/" className={`${menuLinksVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'} text-orange-500 w-full ${style.link} text-center mt-4 transition-opacity duration-500 ease-in-out transform`}>Home</Link>
             <Link href="/menu" className={`${menuLinksVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'} text-orange-500 ${style.link} mt-4 transition-opacity duration-500 ease-in-out transform`}>About</Link>
             <Link href="/about" className={`${menuLinksVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'} text-orange-500 ${style.link} mt-4 transition-opacity duration-500 ease-in-out transform`}>Items</Link>
-            <Link href="/contact" className={`${menuLinksVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'} text-orange-500 ${style.link} mt-4 transition-opacity duration-500 ease-in-out transform`}>Contact</Link>
+            <Link href="/contact" className={`${menuLinksVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'} text-orange-500 ${style.link} my-4 transition-opacity duration-500 ease-in-out transform`}>Contact</Link>
           </div>
         </div>
         
