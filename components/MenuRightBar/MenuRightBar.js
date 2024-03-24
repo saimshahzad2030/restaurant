@@ -21,9 +21,9 @@ const  MenuRightBar = ({content,menu})  => {
                     {col.map((item,index)=>(
                     <div className={style.innerDiv} key={item+index}>
                         
-                     {console.log(`/Assets/menu/${menu}/${item.name}.png`)}
-                        <img className={style.img} src={`/Assets/menu/${menu}/${item.img}.png`} alt={item.img}/>
-                        
+                     
+                       {menu && item &&  <img className={style.img} src={`/Assets/menu/${menu}/${item.img}.png`} alt={item.img}/>
+                        }
                        <h5 className={style.itemHeading}>{item.img}</h5>
                     </div>
 ))}
