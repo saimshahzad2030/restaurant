@@ -4,7 +4,7 @@ import React from 'react'
 import style from './MenuList.module.css'
 const MenuList = ({setContent,setMenu}) => {
   const clickHandler = (itemName)=>{
-    // const capitalizedString = itemName.charAt(0).toUpperCase() + itemName.slice(1);
+    
     if (window.innerWidth > 640) { 
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }

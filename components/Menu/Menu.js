@@ -12,7 +12,7 @@ const Menu = () =>  {
   imageNames.map((item,index)=>(
     arr.push({name:item.slice(0,item.length-4),img:item.slice(0,item.length-4)})
   ))
- const [menuSelected,setMenu] = useState('burger'.charAt(0).toUpperCase() + 'burger'.slice(1))
+ const [menuSelected,setMenu] = useState('burger')
   const [content,setContent] = useState(arr)
   return (
     <div className={style.mainDiv}>
