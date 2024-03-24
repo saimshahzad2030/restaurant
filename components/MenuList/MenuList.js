@@ -4,11 +4,11 @@ import React from 'react'
 import style from './MenuList.module.css'
 const MenuList = ({setContent,setMenu}) => {
   const clickHandler = (itemName)=>{
-    const capitalizedString = itemName.charAt(0).toUpperCase() + itemName.slice(1);
+    // const capitalizedString = itemName.charAt(0).toUpperCase() + itemName.slice(1);
     if (window.innerWidth > 640) { 
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
-    setMenu(capitalizedString)
+    setMenu(itemName)
     if(itemName === 'burger'){
       const imageContext = require.context(`../../public/Assets/menu/burger`, false, /\.(png)$/);
       const imageNames = imageContext.keys().map((key) => key.replace('./', ''));
@@ -31,24 +31,23 @@ const MenuList = ({setContent,setMenu}) => {
     }
     else if(itemName === 'breakfast'){
      const imageNames = ['Chana Tarkari.png', 'Garlic Bread.png', 'Maska Bun.png', 'Rusk, Cake Rush.png', 'omelette.png', 'waffle.png']
-      console.log(imageNames)
+   
       const arr = []
       imageNames.map((item,index)=>(
         arr.push({name:item.slice(0,item.length-4),img:item.slice(0,item.length-4)})
       )) 
-      console.log(arr)
+    
       setContent(arr)
     }
     else if(itemName === 'wings'){
       const imageContext = require.context(`../../public/Assets/menu/wings`, false, /\.(png)$/);
       const imageNames = imageContext.keys().map((key) => key.replace('./', ''));
-      console.log(imageNames)
-
+     
       const arr = []
       imageNames.map((item,index)=>(
         arr.push({name:item.slice(0,item.length-4),img:item.slice(0,item.length-4)})
       )) 
-      console.log(arr)
+ 
 
       setContent(arr)
     }
